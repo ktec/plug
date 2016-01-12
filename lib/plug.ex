@@ -30,7 +30,7 @@ defmodule Plug do
 
   Here's an example of a function plug:
 
-      def json_header_plug(conn, opts) do
+      def json_header_plug(conn, _opts) do
         conn |> put_resp_content_type("application/json")
       end
 
